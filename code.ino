@@ -19,7 +19,7 @@ const float distance = 0.10;   // 10 cm
 float speed_mps = 0;
 float speed_kmph = 0;
 
-// ---------- Interrupts ----------
+
 void sensor1ISR() {
   if (!sensor1Hit) {
     time1 = micros();
@@ -35,7 +35,7 @@ void sensor2ISR() {
 }
 
 void setup() {
-  // LCD init
+ 
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
